@@ -11,7 +11,7 @@ do "计算熵权.do"
 
 2. 调用函数*entropy_weight*：
 ```
-entropy_weight var_list [if] [in] , dir(["a"|"b"])
+entropy_weight var_list [if] [in] , dir("a"|"b")
 ```
 
 ## 输入
