@@ -1,4 +1,4 @@
-# Entropy_Weight_Method
+# Entropy Weight Evaluation Method
 
 ## 功能
 为评价指标计算熵权，生成权重列，供后续合成计算
@@ -11,7 +11,7 @@ do "计算熵权.do"
 
 2. 调用函数*entropy_weight*：
 ```
-entropy_weight var_list [if] [in] , dir("a"|"b")
+entropy_weight var_list [if] [in] , dir("a"|"d")
 ```
 
 ## 输入
