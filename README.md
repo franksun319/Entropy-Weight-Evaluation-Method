@@ -16,7 +16,7 @@ do "计算熵权.do"
 
 调用函数*entropy_weight*：
 ```
-entropy_weight var_list [if] [in] , type(+|-)
+entropy_weight var_list , type(+|-)
 ```
 
 ## Input
