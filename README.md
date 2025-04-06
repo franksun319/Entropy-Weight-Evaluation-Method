@@ -7,11 +7,13 @@ The entropy weight is calculated for the evaluation index, and the weight column
 
 ## Usage
 1. Run the *script*:
+
 运行该*脚本*：
 ```
 do "计算熵权.do"
 ```
 2. Call function *entropy_weight*:
+
 调用函数*entropy_weight*：
 ```
 entropy_weight var_list [if] [in] , type(+|-)
