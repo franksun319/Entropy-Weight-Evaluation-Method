@@ -4,12 +4,12 @@
 		- 输入：需要计算的数值型变量列表，var_list
 		- 输出：生成以"ew_"开头命名的权重列
 	Author: frank.sun.319@gmail.com
-	Version: 2025/04/05 rev3p5
+	Version: 2025/04/05 rev4
 */
 
 cap program drop entropy_weight
 program define entropy_weight
-	syntax varlist [if] [in] [ , type(string)]
+	syntax varlist [ , type(string)]
 	
 	foreach var of varlist `varlist' {
 		* 步1：标准化变量，已标准化
@@ -22,7 +22,7 @@ program define entropy_weight
 			gen std_`var'=r(min)/`var'
 		}
 		else {
-			di `"USAGE: entropy_weight var_list [if] [in] , type(+|-)"'
+			di `"USAGE: entropy_weight var_list , type(+|-)"'
 			exit
 		}
 		
